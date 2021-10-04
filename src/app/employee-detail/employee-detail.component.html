@@ -1,0 +1,12 @@
+<img [src]="imageURL">
+<br />
+<h1>Employee Name is : {{ employeeName }}</h1>
+Employee Name : <input type="text" [(ngModel)]="employeeName">
+<button class="btn btn-success" (click)="sayHello()">
+    Change Name</button>
+
+<HR />
+Number 1: <input type="number" [(ngModel)]="num1"> &nbsp; &nbsp; Number 2: <input type="number" [(ngModel)]="num2"> 
+<button class="btn btn-success" (click)="addNumbers()">Add</button>
+<br/>
+Sum of {{num1}} and {{num2}} is : {{ sum }}
